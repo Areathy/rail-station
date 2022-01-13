@@ -1,0 +1,34 @@
+
+<div *ngFor="let rail of rails">
+<hr/><br/>
+   <div *ngFor="let leg of rail.Legs">
+      ---{{leg.Legs?.length}}
+      <p class="space-around"><b>Departure Time</b>
+         <span>{{leg.DepTime ? leg.DepTime : 'N/A'}}</span>
+         ==<span>{{leg.DepTime?.length}}</span>
+      </p><hr/><br/>
+
+      <div class="legs" *ngFor="let tkt of leg.TKTs">
+         <p class="space-around"><b>Adult Price</b>
+            <span>{{tkt.AdtPrice ? tkt.AdtPrice : 'N/A'}}</span>
+         </p>
+         
+         <p class="space-around"><b>Child Price</b>
+            <span>{{tkt.ChdPrice ? tkt.ChdPrice : 'N/A'}}</span>
+         </p>
+
+         <p class="space-around"><b>Travel Time</b>
+            <span>{{tkt.TravelTimes ? tkt.TravelTimes : 'N/A'}}</span>
+         </p>
+         
+         <p class="space-around"><b>Operator</b>
+            <span>{{tkt.Operator ? tkt.Operator : 'N/A'}}</span>
+         </p>
+         
+      </div>
+      
+   </div><br/><br/>
+</div>
+
+
+
