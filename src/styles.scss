@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.center {
+   padding: 2rem;
+   margin: 2rem auto;
+   justify-content: center;
+   text-align: center;
+}
+
+button {
+   border: 2px solid #75ce84;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.legs {
+   display: flex;
+}
+
+.space-around {
+   padding: .5rem;
+}
