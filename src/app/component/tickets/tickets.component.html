@@ -12,7 +12,7 @@
             <span>{{leg.DepTime ? leg.DepTime : 'N/A'}}</span>
          </p>
 
-         <p *ngIf="leg.RouteName" class="space-around"><b>Route Name: </b>
+         <p *ngIf="!leg.DepTime" class="space-around"><b>Route Name: </b>
             <span>{{leg.RouteName ? leg.RouteName : 'N/A'}}</span>
          </p>
       </div>
